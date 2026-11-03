@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-display: "Cinzel", Georgia, serif;
+
+  --color-forest: #0a3323;
+  --color-forest-dark: #062318;
+  --color-forest-light: #145239;
+  --color-forest-accent: #1e7552;
+  
+  --color-gold: #c98b2c;
+  --color-gold-light: #e5aa4b;
+  --color-gold-dark: #9e6918;
+
+  --color-cream: #FAF8F5;
+  --color-cream-muted: #F3EFEA;
+  --color-warm-gray: #4A4641;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: #FAF8F5;
+    color: #2D2926;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-serif-heading {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Custom subtle pattern & scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF8F5;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Subtle heritage texture utilities */
+.bg-subtle-noise {
+  background-image: radial-gradient(rgba(15, 56, 44, 0.04) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+.bg-gold-gradient {
+  background: linear-gradient(135deg, #d97706 0%, #b45309 100%);
+}
+
+.bg-emerald-gradient {
+  background: linear-gradient(135deg, #0a3323 0%, #164e35 100%);
+}
+
+.card-shine-effect {
+  position: relative;
+  overflow: hidden;
+}
+.card-shine-effect::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.08) 50%, rgba(255,255,255,0) 100%);
+  transform: skewX(-25deg);
+  transition: left 0.75s ease;
+}
+.card-shine-effect:hover::before {
+  left: 150%;
+}
