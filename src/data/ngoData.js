@@ -27,7 +27,7 @@ export const causesData = [
     category: "Education",
     title: "Project Vidya: Girl Child STEM & Higher Education",
     subtitle: "Empowering first-generation girls from tribal hamlets with laptops, STEM labs, and college tuition.",
-    image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1596495578065-6e0763fa1178?auto=format&fit=crop&w=800&q=80",
     raised: 2840000,
     goal: 3500000,
     donorsCount: 1420,

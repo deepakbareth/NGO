@@ -72,8 +72,8 @@ export default function Causes({ onOpenDonate }) {
                       {cause.category}
                     </span>
 
-                    <span className="absolute bottom-2.5 left-2.5 right-2.5 text-white text-[11px] font-medium line-clamp-1 bg-black/50 backdrop-blur-xs px-2 py-0.5 rounded-md">
-                      💡 {cause.impactUnit}
+                    <span className="absolute bottom-2.5 left-2.5 right-2.5 text-white text-[10px] font-semibold line-clamp-1 bg-black/60 backdrop-blur-xs px-2.5 py-1 rounded-lg border border-white/10">
+                      ✨ {cause.impactUnit}
                     </span>
                   </div>
 

@@ -4,14 +4,14 @@ import { ngoConfig } from '../data/ngoData';
 
 export default function Hero({ onOpenDonate, onOpenVideo }) {
   return (
-    <section className="relative pt-6 pb-14 sm:pb-20 overflow-hidden">
+    <section className="relative pt-6 pb-14 sm:pb-20 overflow-visible">
       
       {/* Soft warm sunset ambient glows */}
       <div className="absolute top-10 left-1/2 -translate-x-1/2 w-[600px] h-[350px] bg-amber-200/30 rounded-full blur-3xl pointer-events-none -z-10"></div>
       <div className="absolute -top-10 right-10 w-72 h-72 bg-orange-200/25 rounded-full blur-2xl pointer-events-none -z-10"></div>
       
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
           
           {/* Left: Punchy Text Content */}
           <div className="lg:col-span-7 text-center lg:text-left space-y-5">
@@ -74,51 +74,65 @@ export default function Hero({ onOpenDonate, onOpenVideo }) {
 
           </div>
 
-          {/* Right: Glassy Visual Composition */}
-          <div className="lg:col-span-5 relative">
-            <div className="relative rounded-3xl overflow-hidden glass-card p-2 border-2 border-white/80 shadow-xl">
-              <div className="relative aspect-[4/4.2] rounded-2xl overflow-hidden">
+          {/* Right: Masterfully Polished Hero Visual Card (NO CLIPPING, NO OVERLAPS) */}
+          <div className="lg:col-span-5 relative pt-4 pb-4 px-2 sm:px-4">
+            
+            {/* Outer card container with NO overflow-hidden, so floating badges never get cut off */}
+            <div className="relative rounded-3xl glass-card p-2.5 sm:p-3 shadow-2xl border-2 border-white/90">
+              
+              {/* Top-Left Floating Badge: 88.4% Direct Field Use */}
+              <div className="absolute -top-4 -left-3 sm:-left-5 z-20 bg-white/95 backdrop-blur-md rounded-2xl px-3.5 py-2 shadow-xl border border-amber-200/80 flex items-center gap-2.5 animate-fade-in">
+                <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-amber-600 to-amber-500 text-white flex items-center justify-center font-extrabold text-xs shadow-sm">
+                  88%
+                </div>
+                <div>
+                  <span className="text-xs font-extrabold text-stone-900 block leading-tight">
+                    Direct Ground Use
+                  </span>
+                  <span className="text-[10px] text-stone-500 font-medium">
+                    Audited by Chartered Accts
+                  </span>
+                </div>
+              </div>
+
+              {/* Genuine, Joyful Rural Education Photo */}
+              <div className="relative aspect-[4/4.3] rounded-2xl overflow-hidden shadow-inner">
                 <img
-                  src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=900&q=80"
-                  alt="Rural students smiling with pride at their desk"
+                  src="https://images.unsplash.com/photo-1596495578065-6e0763fa1178?auto=format&fit=crop&w=1000&q=80"
+                  alt="Joyful rural students smiling with books and dignity"
                   className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent"></div>
                 
-                {/* Overlay Quote */}
-                <div className="absolute bottom-4 left-4 right-4 text-white">
-                  <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-amber-500/90 backdrop-blur-xs text-[10px] font-bold uppercase tracking-wider text-white mb-1.5">
+                {/* Clear Quote Overlay positioned with plenty of breathing room */}
+                <div className="absolute bottom-4 left-4 right-4 text-white z-10 space-y-1">
+                  <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-amber-500 text-[10px] font-extrabold uppercase tracking-wider text-white shadow-xs">
                     <Sparkles className="w-3 h-3" />
                     <span>Project Vidya</span>
                   </div>
-                  <p className="text-sm font-semibold leading-snug">
+                  <p className="text-sm font-bold leading-snug text-white/95 max-w-[70%]">
                     "When you educate a girl, an entire village rises."
                   </p>
                 </div>
               </div>
 
-              {/* Floating Glassy Badge 1 */}
-              <div className="absolute -top-3 -left-3 glass-panel rounded-2xl px-3.5 py-2.5 shadow-lg border border-amber-200/60 hidden sm:flex items-center gap-2.5">
-                <div className="w-8 h-8 rounded-xl bg-amber-500 text-white flex items-center justify-center font-bold text-xs shadow-xs">
-                  88%
-                </div>
-                <div>
-                  <span className="text-[11px] font-bold block text-stone-800">Direct Ground Use</span>
-                  <span className="text-[10px] text-stone-500">Audited by Chartered Accts</span>
-                </div>
-              </div>
-
-              {/* Floating Glassy Badge 2 */}
-              <div className="absolute -bottom-3 -right-3 glass-panel rounded-2xl px-3.5 py-2.5 shadow-lg border border-emerald-200/60 flex items-center gap-2.5">
-                <div className="w-8 h-8 rounded-xl bg-emerald-700 text-white flex items-center justify-center font-bold text-xs shadow-xs">
+              {/* Bottom-Right Floating Badge: 34,200+ Lives (Elevated Z-index, cleanly placed) */}
+              <div className="absolute -bottom-4 -right-2 sm:-right-4 z-20 bg-white/95 backdrop-blur-md rounded-2xl px-3.5 py-2 shadow-xl border border-emerald-200/80 flex items-center gap-2.5">
+                <div className="w-9 h-9 rounded-xl bg-emerald-700 text-white flex items-center justify-center font-extrabold text-xs shadow-sm">
                   34k
                 </div>
                 <div>
-                  <span className="text-[11px] font-bold block text-stone-800">34,200+ Lives</span>
-                  <span className="text-[10px] text-emerald-700 font-semibold">Verified Impact</span>
+                  <span className="text-xs font-extrabold text-stone-900 block leading-tight">
+                    34,200+ Lives
+                  </span>
+                  <span className="text-[10px] text-emerald-700 font-bold flex items-center gap-1">
+                    ✓ Verified Ground Impact
+                  </span>
                 </div>
               </div>
+
             </div>
+
           </div>
 
         </div>
