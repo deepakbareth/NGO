@@ -1,16 +1,11 @@
 import React, { useState } from 'react';
-import TopTrustBar from './components/TopTrustBar';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import UrgentAppeal from './components/UrgentAppeal';
 import Causes from './components/Causes';
 import ImpactCalculator from './components/ImpactCalculator';
-import ImpactStats from './components/ImpactStats';
+import TrustAndImpact from './components/TrustAndImpact';
 import Stories from './components/Stories';
-import Transparency from './components/Transparency';
-import PartnersTestimonials from './components/PartnersTestimonials';
-import FaqSection from './components/FaqSection';
-import GetInvolved from './components/GetInvolved';
 import Footer from './components/Footer';
 import DonationModal from './components/DonationModal';
 import VolunteerModal from './components/VolunteerModal';
@@ -40,66 +35,46 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-[#FAF8F5] text-stone-900 selection:bg-amber-200 selection:text-emerald-950 font-sans">
+    <div className="min-h-screen flex flex-col font-sans selection:bg-amber-200 selection:text-amber-950">
       
-      {/* 1. Top Trust & Compliance Bar */}
-      <TopTrustBar onOpenDonate={() => handleOpenDonate()} />
-
-      {/* 2. Main Navigation Header */}
+      {/* 1. Sleek Glassy Navbar */}
       <Navbar
         onOpenDonate={() => handleOpenDonate()}
         onOpenVolunteer={() => setVolunteerModalOpen(true)}
       />
 
-      <main className="flex-1">
-        {/* 3. Hero Section: The Dignity Catalyst */}
+      <main className="flex-1 space-y-4 sm:space-y-8">
+        {/* 2. Hero: Modern, Glassy, Punchy */}
         <Hero
           onOpenDonate={() => handleOpenDonate({ amount: 2500 })}
           onOpenVideo={() => setVideoModalOpen(true)}
         />
 
-        {/* 4. Urgent Appeal Spotlight: Winter Warmth Drive */}
+        {/* 3. Urgent Ground Appeal */}
         <UrgentAppeal
           onOpenDonate={(data) => handleOpenDonate(data)}
         />
 
-        {/* 5. Core Causes & Programs (Grid with Filter Tabs) */}
+        {/* 4. Top 3 Targeted Causes */}
         <Causes
           onOpenDonate={(data) => handleOpenDonate(data)}
         />
 
-        {/* 6. Interactive Impact Calculator (Tangible Rupee Conversion) */}
+        {/* 5. Interactive Impact Calculator */}
         <ImpactCalculator
           onOpenDonate={(data) => handleOpenDonate(data)}
         />
 
-        {/* 7. Proof of Work & 14-Year Milestones */}
-        <ImpactStats />
+        {/* 6. Consolidated Trust & Audited Proof */}
+        <TrustAndImpact />
 
-        {/* 8. Dignified Human Stories of Transformation */}
+        {/* 7. Voices of Hope (Stories) */}
         <Stories
-          onOpenDonate={(data) => handleOpenDonate(data)}
-        />
-
-        {/* 9. Financial Transparency, Audits & Trustees */}
-        <Transparency />
-
-        {/* 10. CSR Partners & Community Testimonials */}
-        <PartnersTestimonials />
-
-        {/* 11. Conscientious Donor FAQ (80G, FCRA, Visits) */}
-        <FaqSection
-          onOpenDonate={() => handleOpenDonate()}
-        />
-
-        {/* 12. Get Involved: Volunteer & Corporate CSR */}
-        <GetInvolved
-          onOpenVolunteer={() => setVolunteerModalOpen(true)}
           onOpenDonate={(data) => handleOpenDonate(data)}
         />
       </main>
 
-      {/* 13. High-Trust Legal Footer & Direct Bank Rails */}
+      {/* 8. Streamlined High-Trust Footer */}
       <Footer
         onOpenDonate={() => handleOpenDonate()}
         onOpenVolunteer={() => setVolunteerModalOpen(true)}

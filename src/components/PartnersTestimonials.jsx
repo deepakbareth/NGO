@@ -33,7 +33,7 @@ export default function PartnersTestimonials() {
           <span className="text-xs font-bold uppercase tracking-wider text-stone-500">
             Institutional Trust & CSR Coalitions
           </span>
-          <h3 className="font-serif text-2xl font-bold text-[#0A3323] mt-1">
+          <h3 className="text-2xl font-extrabold text-[#0A3323] mt-1">
             Backed by Respected Institutions & Corporate CSR Funds
           </h3>
         </div>
@@ -79,7 +79,7 @@ export default function PartnersTestimonials() {
 
               <div className="pt-3 border-t border-stone-100 flex items-center justify-between">
                 <div>
-                  <div className="font-serif font-bold text-stone-900 text-sm">
+                  <div className="font-bold text-stone-900 text-sm">
                     {item.name}
                   </div>
                   <div className="text-[11px] text-stone-500 font-medium">

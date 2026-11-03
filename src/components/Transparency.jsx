@@ -23,7 +23,7 @@ export default function Transparency() {
             Financial Governance & Accountability
           </div>
 
-          <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0A3323] tracking-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#0A3323] tracking-tight">
             Open Books. Zero Ambiguity.
           </h2>
 
@@ -37,7 +37,7 @@ export default function Transparency() {
           
           {/* Left Column: Breakdown Cards */}
           <div className="lg:col-span-7 space-y-5">
-            <h3 className="font-serif text-2xl font-bold text-stone-900 flex items-center gap-2">
+            <h3 className="text-2xl font-bold text-stone-900 flex items-center gap-2">
               <PieChart className="w-5 h-5 text-emerald-800" />
               <span>Where Every Rupee Goes (FY 2024-25)</span>
             </h3>
@@ -51,7 +51,7 @@ export default function Transparency() {
                     </span>
                     <div className="flex items-center gap-2">
                       <span className="text-xs text-stone-500 font-medium">({item.amount})</span>
-                      <span className="font-serif font-bold text-lg text-emerald-900 bg-emerald-100/80 px-2.5 py-0.5 rounded-lg">
+                      <span className="font-bold text-lg text-emerald-900 bg-emerald-100/80 px-2.5 py-0.5 rounded-lg">
                         {item.percentage}%
                       </span>
                     </div>
@@ -89,7 +89,7 @@ export default function Transparency() {
               <span className="text-xs font-bold uppercase tracking-wider text-stone-500">
                 Public Disclosures & Audit Reports
               </span>
-              <h4 className="font-serif text-xl font-bold text-stone-900 mt-1">
+              <h4 className="text-xl font-bold text-stone-900 mt-1">
                 Verified Compliance Documents
               </h4>
               <p className="text-xs text-stone-600 mt-1">
@@ -162,7 +162,7 @@ export default function Transparency() {
             <span className="text-xs font-bold uppercase tracking-wider text-amber-700">
               Leadership & Stewardship
             </span>
-            <h3 className="font-serif text-2xl sm:text-3xl font-bold text-[#0A3323] mt-1">
+            <h3 className="text-2xl sm:text-3xl font-extrabold text-[#0A3323] mt-1">
               Governed by Exemplary Public Servants
             </h3>
             <p className="text-xs sm:text-sm text-stone-600 mt-1">
@@ -176,12 +176,12 @@ export default function Transparency() {
                 key={idx}
                 className="bg-stone-50 p-6 rounded-2xl border border-stone-200 hover:shadow-md transition-all text-center space-y-3"
               >
-                <div className="w-16 h-16 rounded-full bg-[#0A3323] text-amber-300 font-serif text-xl font-bold flex items-center justify-center mx-auto border-2 border-amber-400/50 shadow-sm">
+                <div className="w-16 h-16 rounded-full bg-[#0A3323] text-amber-300 text-xl font-bold flex items-center justify-center mx-auto border-2 border-amber-400/50 shadow-sm">
                   {trustee.name.split(' ').map(n => n[0]).join('').slice(0, 2)}
                 </div>
 
                 <div>
-                  <h4 className="font-serif font-bold text-lg text-stone-900">
+                  <h4 className="font-bold text-lg text-stone-900">
                     {trustee.name}
                   </h4>
                   <div className="text-xs font-semibold text-emerald-800 mt-0.5">

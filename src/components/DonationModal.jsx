@@ -87,7 +87,7 @@ export default function DonationModal({ isOpen, onClose, initialData = {} }) {
               <Heart className="w-5 h-5 fill-current" />
             </div>
             <div>
-              <h3 className="font-serif text-lg sm:text-xl font-bold">
+              <h3 className="text-lg sm:text-xl font-bold">
                 {step === 3 ? 'Donation Confirmed!' : 'Dignified Contribution'}
               </h3>
               <p className="text-xs text-emerald-300">
@@ -203,7 +203,7 @@ export default function DonationModal({ isOpen, onClose, initialData = {} }) {
               {/* Tax benefit highlight */}
               <div className="p-3 bg-amber-50/80 rounded-xl border border-amber-200 text-xs text-amber-900 flex items-center justify-between">
                 <span>Estimated 80G Tax Exemption (50%):</span>
-                <strong className="text-sm font-serif text-[#0A3323]">
+                <strong className="text-sm font-bold text-[#0A3323]">
                   Save ≈ ₹{Math.round(selectedAmount * 0.5).toLocaleString('en-IN')}
                 </strong>
               </div>
@@ -226,7 +226,7 @@ export default function DonationModal({ isOpen, onClose, initialData = {} }) {
               
               <div className="flex items-center justify-between border-b border-stone-100 pb-2">
                 <span className="text-xs font-bold text-stone-500 uppercase tracking-wider">
-                  Contribution: <strong className="text-stone-900 font-serif text-sm">₹{selectedAmount.toLocaleString('en-IN')}</strong> ({frequency})
+                  Contribution: <strong className="text-stone-900 font-bold text-sm">₹{selectedAmount.toLocaleString('en-IN')}</strong> ({frequency})
                 </span>
                 <button
                   type="button"
@@ -385,7 +385,7 @@ export default function DonationModal({ isOpen, onClose, initialData = {} }) {
               </div>
 
               <div>
-                <h4 className="font-serif text-2xl font-bold text-stone-900">
+                <h4 className="text-2xl font-bold text-stone-900">
                   Thank You, {name || 'Conscientious Patron'}!
                 </h4>
                 <p className="text-xs sm:text-sm text-stone-600 mt-1">
@@ -396,7 +396,7 @@ export default function DonationModal({ isOpen, onClose, initialData = {} }) {
               {/* Receipt Preview Card */}
               <div className="bg-stone-50 p-5 rounded-2xl border border-stone-200 text-left space-y-3 font-sans">
                 <div className="flex justify-between items-center border-b border-stone-200 pb-2">
-                  <span className="font-serif font-bold text-[#0A3323] text-sm">
+                  <span className="font-bold text-[#0A3323] text-sm">
                     {ngoConfig.legalName}
                   </span>
                   <span className="text-[11px] font-mono bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded font-bold">
@@ -411,7 +411,7 @@ export default function DonationModal({ isOpen, onClose, initialData = {} }) {
                   </div>
                   <div>
                     <span className="text-stone-400 block">Amount Donated:</span>
-                    <strong className="text-stone-900 font-serif">₹{selectedAmount.toLocaleString('en-IN')}</strong>
+                    <strong className="text-stone-900 font-bold">₹{selectedAmount.toLocaleString('en-IN')}</strong>
                   </div>
                   <div>
                     <span className="text-stone-400 block">Donor Name:</span>

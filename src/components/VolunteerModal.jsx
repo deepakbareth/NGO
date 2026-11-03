@@ -40,7 +40,7 @@ export default function VolunteerModal({ isOpen, onClose }) {
               <Users className="w-5 h-5" />
             </div>
             <div>
-              <h3 className="font-serif text-lg sm:text-xl font-bold">
+              <h3 className="text-lg sm:text-xl font-bold">
                 Join the Samarpan Volunteer Force
               </h3>
               <p className="text-xs text-stone-300">
@@ -65,7 +65,7 @@ export default function VolunteerModal({ isOpen, onClose }) {
                 <CheckCircle2 className="w-8 h-8 text-emerald-700" />
               </div>
 
-              <h4 className="font-serif text-2xl font-bold text-stone-900">
+              <h4 className="text-2xl font-bold text-stone-900">
                 Application Received, {fullName}!
               </h4>
 

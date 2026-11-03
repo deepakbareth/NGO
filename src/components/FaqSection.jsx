@@ -20,7 +20,7 @@ export default function FaqSection({ onOpenDonate }) {
             Frequently Asked Questions
           </div>
 
-          <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0A3323] tracking-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#0A3323] tracking-tight">
             Clear Answers for Conscientious Donors
           </h2>
 
@@ -44,7 +44,7 @@ export default function FaqSection({ onOpenDonate }) {
                   onClick={() => toggle(idx)}
                   className="w-full p-5 sm:p-6 text-left flex items-center justify-between gap-4 cursor-pointer hover:bg-stone-50 transition-colors"
                 >
-                  <span className="font-serif font-bold text-base sm:text-lg text-stone-900">
+                  <span className="font-bold text-base sm:text-lg text-stone-900">
                     {faq.question}
                   </span>
                   <div
@@ -73,7 +73,7 @@ export default function FaqSection({ onOpenDonate }) {
               <FileCheck className="w-5 h-5 text-emerald-800" />
             </div>
             <div>
-              <div className="font-serif font-bold text-stone-900 text-sm">
+              <div className="font-bold text-stone-900 text-sm">
                 Have an institutional CSR inquiry or statutory compliance question?
               </div>
               <div className="text-xs text-stone-500">

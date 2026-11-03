@@ -25,7 +25,7 @@ export default function ImpactStats() {
             Proof of Work & Ground Realities
           </div>
 
-          <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-white tracking-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight">
             14 Years of Unbroken Ground Service
           </h2>
 
@@ -41,7 +41,7 @@ export default function ImpactStats() {
               key={i}
               className="bg-white/5 backdrop-blur-xs border border-white/10 rounded-2xl p-6 text-center hover:bg-white/10 hover:border-amber-400/40 transition-all duration-300 group"
             >
-              <div className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-amber-400 group-hover:scale-105 transition-transform duration-300">
+              <div className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-amber-400 group-hover:scale-105 transition-transform duration-300">
                 {stat.value}
               </div>
               <div className="text-sm font-semibold text-white mt-2">
@@ -60,7 +60,7 @@ export default function ImpactStats() {
             <span className="text-xs uppercase tracking-widest text-amber-400 font-bold">
               Our Journey of Dignity
             </span>
-            <h3 className="font-serif text-xl sm:text-2xl font-bold text-white mt-1">
+            <h3 className="text-xl sm:text-2xl font-bold text-white mt-1">
               Building Enduring Community Institutions
             </h3>
           </div>
@@ -74,7 +74,7 @@ export default function ImpactStats() {
                 <span className="inline-block text-xs font-bold text-amber-300 px-2 py-0.5 rounded bg-white/10 font-mono">
                   {m.year}
                 </span>
-                <h4 className="font-serif font-bold text-base text-white mt-2">
+                <h4 className="font-bold text-base text-white mt-2">
                   {m.title}
                 </h4>
                 <p className="text-xs text-stone-300 mt-1 leading-relaxed">

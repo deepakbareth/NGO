@@ -13,7 +13,7 @@ export default function VideoModal({ isOpen, onClose, onOpenDonate }) {
         <div className="p-4 bg-stone-950 flex items-center justify-between text-white border-b border-white/10">
           <div className="flex items-center gap-2">
             <span className="w-2.5 h-2.5 rounded-full bg-red-500 animate-pulse"></span>
-            <span className="font-serif font-bold text-sm tracking-wide">
+            <span className="font-bold text-sm tracking-wide">
               Documentary Preview: "Silent Sparks in the Hamlets"
             </span>
           </div>
@@ -45,7 +45,7 @@ export default function VideoModal({ isOpen, onClose, onOpenDonate }) {
               <div className="w-16 h-16 rounded-full bg-amber-500 text-white flex items-center justify-center mx-auto shadow-xl hover:scale-110 transition-transform cursor-pointer">
                 <Play className="w-7 h-7 fill-current ml-1" />
               </div>
-              <p className="font-serif text-lg sm:text-xl text-white font-medium">
+              <p className="text-lg sm:text-xl text-white font-semibold">
                 "We don't need charity. We need an opportunity to prove what our daughters can build."
               </p>
               <p className="text-xs text-stone-300">

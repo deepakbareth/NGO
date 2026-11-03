@@ -13,7 +13,7 @@ export default function GetInvolved({ onOpenVolunteer, onOpenDonate }) {
             Walk With Us
           </div>
 
-          <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0A3323] tracking-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#0A3323] tracking-tight">
             Two Meaningful Ways to Catalyze Lasting Change
           </h2>
 
@@ -36,7 +36,7 @@ export default function GetInvolved({ onOpenVolunteer, onOpenDonate }) {
                 <span className="text-xs uppercase tracking-wider text-amber-400 font-bold">
                   For Individuals & Youth
                 </span>
-                <h3 className="font-serif text-2xl sm:text-3xl font-bold text-white mt-1">
+                <h3 className="text-2xl sm:text-3xl font-bold text-white mt-1">
                   Join as a Ground or Virtual Volunteer
                 </h3>
                 <p className="text-stone-300 text-xs sm:text-sm mt-3 leading-relaxed">
@@ -82,7 +82,7 @@ export default function GetInvolved({ onOpenVolunteer, onOpenDonate }) {
                 <span className="text-xs uppercase tracking-wider text-emerald-800 font-bold">
                   For Enterprises & Family Offices
                 </span>
-                <h3 className="font-serif text-2xl sm:text-3xl font-bold text-stone-900 mt-1">
+                <h3 className="text-2xl sm:text-3xl font-bold text-stone-900 mt-1">
                   Corporate CSR Alignment & Payroll Giving
                 </h3>
                 <p className="text-stone-600 text-xs sm:text-sm mt-3 leading-relaxed">
