@@ -14,13 +14,6 @@
 @layer base {
   html {
     scroll-behavior: smooth;
-    scroll-padding-top: 80px;
-  }
-
-  @media (max-width: 640px) {
-    html {
-      scroll-padding-top: 65px;
-    }
   }
 
   body {

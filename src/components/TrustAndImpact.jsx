@@ -11,7 +11,7 @@ export default function TrustAndImpact() {
   };
 
   return (
-    <section id="trust-impact" className="py-10 sm:py-14 relative scroll-mt-20 sm:scroll-mt-24">
+    <section id="trust-impact" className="pt-20 pb-10 sm:pt-24 sm:pb-14 relative">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         
         {/* Section Header */}

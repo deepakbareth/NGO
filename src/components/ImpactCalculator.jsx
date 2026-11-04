@@ -12,7 +12,7 @@ export default function ImpactCalculator({ onOpenDonate }) {
   const mealsEquivalent = isMonthly ? activeTier.mealsCount * 12 : activeTier.mealsCount;
 
   return (
-    <section id="calculator" className="py-6 sm:py-10 relative scroll-mt-20 sm:scroll-mt-24">
+    <section id="calculator" className="pt-20 pb-8 sm:pt-24 sm:pb-12 relative">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         
         {/* Section Header */}

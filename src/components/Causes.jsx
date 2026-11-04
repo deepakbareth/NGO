@@ -10,13 +10,13 @@ export default function Causes({ onOpenDonate }) {
     : causesData.filter(c => c.category.toLowerCase() === filter);
 
   return (
-    <section id="causes" className="py-10 sm:py-14 relative scroll-mt-20 sm:scroll-mt-24">
+    <section id="causes" className="pt-20 pb-10 sm:pt-24 sm:pb-14 relative">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
 
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
-          <div>
-            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-amber-100/80 text-amber-900 border border-amber-300/60 mb-2">
+        <div className="flex flex-col md:flex-row md:items-end justify-between items-center md:items-start gap-5 mb-8 text-center md:text-left">
+          <div className="flex flex-col items-center md:items-start">
+            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-amber-100/80 text-amber-900 border border-amber-300/60 mb-2.5">
               <Sparkles className="w-3.5 h-3.5 text-amber-700" />
               Active Ground Programs
             </div>
@@ -26,7 +26,7 @@ export default function Causes({ onOpenDonate }) {
           </div>
 
           {/* Filter Pills */}
-          <div className="flex items-center gap-1.5 overflow-x-auto no-scrollbar py-2 px-1 -my-2">
+          <div className="flex items-center justify-center md:justify-start gap-1.5 overflow-x-auto no-scrollbar py-2 px-1 -my-2 w-full md:w-auto">
             {[
               { id: 'all', label: 'Top Programs' },
               { id: 'education', label: 'Education' },

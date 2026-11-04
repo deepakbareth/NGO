@@ -14,7 +14,7 @@ export default function UrgentAppeal({ onOpenDonate }) {
   ];
 
   return (
-    <section id="urgent-drive" className="py-8 sm:py-12 scroll-mt-20 sm:scroll-mt-24">
+    <section id="urgent-drive" className="pt-20 pb-8 sm:pt-24 sm:pb-12 relative">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         
         <div className="glass-dark rounded-3xl text-white p-6 sm:p-8 shadow-xl relative overflow-hidden">
@@ -25,8 +25,8 @@ export default function UrgentAppeal({ onOpenDonate }) {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-center relative z-10">
             
             {/* Left: Headline & Progress */}
-            <div className="lg:col-span-7 space-y-4">
-              <div className="flex items-center gap-2">
+            <div className="lg:col-span-7 space-y-4 text-center lg:text-left flex flex-col items-center lg:items-start">
+              <div className="flex items-center justify-center lg:justify-start gap-2 flex-wrap">
                 <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider bg-amber-500/20 text-amber-300 border border-amber-400/30">
                   <AlertCircle className="w-3.5 h-3.5 text-amber-400" />
                   Urgent Winter Relief
@@ -47,7 +47,7 @@ export default function UrgentAppeal({ onOpenDonate }) {
               </div>
 
               {/* Compact Progress Bar */}
-              <div className="bg-black/30 p-3.5 rounded-2xl border border-white/10 space-y-1.5">
+              <div className="w-full bg-black/30 p-3.5 rounded-2xl border border-white/10 space-y-1.5 text-left">
                 <div className="flex justify-between items-baseline text-xs">
                   <div>
                     <span className="text-[10px] uppercase tracking-wider text-amber-300 font-bold">Raised</span>

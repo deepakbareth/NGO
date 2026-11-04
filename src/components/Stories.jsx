@@ -7,7 +7,7 @@ export default function Stories({ onOpenDonate }) {
   const topStories = storiesData.slice(0, 2);
 
   return (
-    <section id="stories" className="py-10 sm:py-14 relative scroll-mt-20 sm:scroll-mt-24">
+    <section id="stories" className="pt-20 pb-10 sm:pt-24 sm:pb-14 relative">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         
         {/* Section Header */}

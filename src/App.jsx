@@ -43,7 +43,7 @@ export default function App() {
         onOpenVolunteer={() => setVolunteerModalOpen(true)}
       />
 
-      <main className="flex-1 space-y-4 sm:space-y-8 overflow-x-hidden w-full">
+      <main className="flex-1 space-y-4 sm:space-y-8 overflow-x-hidden w-full pt-16 sm:pt-20">
         {/* 2. Hero: Modern, Glassy, Punchy */}
         <Hero
           onOpenDonate={() => handleOpenDonate({ amount: 2500 })}
