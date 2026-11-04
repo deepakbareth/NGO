@@ -5,14 +5,14 @@ import { causesData } from '../data/ngoData';
 export default function Causes({ onOpenDonate }) {
   const [filter, setFilter] = useState('all');
 
-  const displayCauses = filter === 'all' 
-    ? causesData.slice(0, 3) 
+  const displayCauses = filter === 'all'
+    ? causesData.slice(0, 3)
     : causesData.filter(c => c.category.toLowerCase() === filter);
 
   return (
     <section id="causes" className="py-10 sm:py-14 relative scroll-mt-20 sm:scroll-mt-24">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        
+
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
           <div>
@@ -26,7 +26,7 @@ export default function Causes({ onOpenDonate }) {
           </div>
 
           {/* Filter Pills */}
-          <div className="flex items-center gap-1.5 overflow-x-auto no-scrollbar">
+          <div className="flex items-center gap-1.5 overflow-x-auto no-scrollbar py-2 px-1 -my-2">
             {[
               { id: 'all', label: 'Top Programs' },
               { id: 'education', label: 'Education' },
@@ -38,7 +38,7 @@ export default function Causes({ onOpenDonate }) {
                 onClick={() => setFilter(tab.id)}
                 className={`px-3 py-1.5 rounded-xl text-xs font-semibold transition-all cursor-pointer whitespace-nowrap ${
                   filter === tab.id
-                    ? 'bg-[#09281B] text-white shadow-xs'
+                    ? 'bg-[#09281B] text-white shadow-xs hover:-translate-y-0.5'
                     : 'glass-card text-stone-700 hover:bg-white'
                 }`}
               >
@@ -67,7 +67,7 @@ export default function Causes({ onOpenDonate }) {
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-                    
+
                     <span className="absolute top-2.5 left-2.5 bg-[#09281B]/90 backdrop-blur-xs text-amber-300 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">
                       {cause.category}
                     </span>
