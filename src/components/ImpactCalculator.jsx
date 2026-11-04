@@ -57,23 +57,23 @@ export default function ImpactCalculator({ onOpenDonate }) {
         </div>
 
         {/* Glassmorphic Calculator Card */}
-        <div className="glass-panel rounded-3xl p-5 sm:p-8 max-w-4xl mx-auto shadow-xl">
+        <div className="glass-panel rounded-2xl sm:rounded-3xl p-3.5 sm:p-8 max-w-4xl mx-auto shadow-xl">
           
           {/* Preset Buttons */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 mb-6">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-2.5 mb-5 sm:mb-6">
             {impactCalculatorTiers.slice(0, 4).map((tier, idx) => (
               <button
                 key={tier.amount}
                 type="button"
                 onClick={() => setSelectedTierIndex(idx)}
-                className={`p-3 rounded-2xl border text-center transition-all cursor-pointer ${
+                className={`p-2.5 sm:p-3 rounded-xl sm:rounded-2xl border text-center transition-all cursor-pointer ${
                   selectedTierIndex === idx
                     ? 'border-amber-600 bg-amber-500 text-white shadow-md'
                     : 'border-white/80 bg-white/70 hover:bg-white text-stone-800'
                 }`}
               >
-                <div className="font-extrabold text-base">₹{tier.amount.toLocaleString('en-IN')}</div>
-                <div className={`text-[11px] truncate mt-0.5 ${selectedTierIndex === idx ? 'text-amber-100' : 'text-stone-500'}`}>
+                <div className="font-extrabold text-sm sm:text-base">₹{tier.amount.toLocaleString('en-IN')}</div>
+                <div className={`text-[10px] sm:text-[11px] truncate mt-0.5 ${selectedTierIndex === idx ? 'text-amber-100' : 'text-stone-500'}`}>
                   {tier.beneficiaries}
                 </div>
               </button>
@@ -81,7 +81,7 @@ export default function ImpactCalculator({ onOpenDonate }) {
           </div>
 
           {/* Dynamic Details Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-center bg-white/80 rounded-2xl p-5 sm:p-6 border border-white">
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-5 sm:gap-6 items-center bg-white/80 rounded-2xl p-4 sm:p-6 border border-white">
             
             <div className="md:col-span-7 space-y-3">
               <div className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-md text-[11px] font-bold bg-emerald-100 text-emerald-900">

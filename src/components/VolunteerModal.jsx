@@ -29,20 +29,20 @@ export default function VolunteerModal({ isOpen, onClose }) {
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-fade-in overflow-y-auto">
-      <div className="relative w-full max-w-lg bg-white rounded-3xl shadow-2xl border border-stone-200 overflow-hidden my-8">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-black/60 backdrop-blur-sm animate-fade-in overflow-y-auto">
+      <div className="relative w-full max-w-lg bg-white rounded-2xl sm:rounded-3xl shadow-2xl border border-stone-200 overflow-hidden my-4 sm:my-8">
         
         {/* Header */}
-        <div className="bg-[#0A3323] text-white p-5 sm:p-6 flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center border border-amber-400/30">
-              <Users className="w-5 h-5" />
+        <div className="bg-[#0A3323] text-white p-4 sm:p-6 flex items-center justify-between">
+          <div className="flex items-center gap-2.5 sm:gap-3">
+            <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center border border-amber-400/30 shrink-0">
+              <Users className="w-4 h-4 sm:w-5 sm:h-5" />
             </div>
             <div>
-              <h3 className="text-lg sm:text-xl font-bold">
+              <h3 className="text-base sm:text-xl font-bold">
                 Join the Samarpan Volunteer Force
               </h3>
-              <p className="text-xs text-stone-300">
+              <p className="text-[10px] sm:text-xs text-stone-300">
                 Lend your mind, skills, and heart to grassroots empowerment
               </p>
             </div>
@@ -57,7 +57,7 @@ export default function VolunteerModal({ isOpen, onClose }) {
         </div>
 
         {/* Content */}
-        <div className="p-6 sm:p-8">
+        <div className="p-4 sm:p-8">
           {submitted ? (
             <div className="text-center space-y-4 py-4">
               <div className="w-16 h-16 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center mx-auto">

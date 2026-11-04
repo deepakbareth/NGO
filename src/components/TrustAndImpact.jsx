@@ -49,7 +49,7 @@ export default function TrustAndImpact() {
         </div>
 
         {/* Financial Allocation & Audit Card */}
-        <div className="glass-panel p-6 sm:p-8 rounded-3xl shadow-lg space-y-6">
+        <div className="glass-panel p-4 sm:p-8 rounded-2xl sm:rounded-3xl shadow-lg space-y-5 sm:space-y-6">
           
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-stone-200/60 pb-4">
             <div>

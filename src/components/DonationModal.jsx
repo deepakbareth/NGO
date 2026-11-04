@@ -80,20 +80,20 @@ export default function DonationModal({ isOpen, onClose, initialData = {} }) {
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-fade-in overflow-y-auto">
-      <div className="relative w-full max-w-xl bg-white rounded-3xl shadow-2xl border border-stone-200 overflow-hidden my-8">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-black/60 backdrop-blur-sm animate-fade-in overflow-y-auto">
+      <div className="relative w-full max-w-xl bg-white rounded-2xl sm:rounded-3xl shadow-2xl border border-stone-200 overflow-hidden my-4 sm:my-8">
         
         {/* Modal Header */}
-        <div className="bg-gradient-to-r from-[#062318] to-[#0A3323] text-white p-5 sm:p-6 flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center border border-amber-400/40">
-              <Heart className="w-5 h-5 fill-current" />
+        <div className="bg-gradient-to-r from-[#062318] to-[#0A3323] text-white p-4 sm:p-6 flex items-center justify-between">
+          <div className="flex items-center gap-2.5 sm:gap-3">
+            <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center border border-amber-400/40 shrink-0">
+              <Heart className="w-4 h-4 sm:w-5 sm:h-5 fill-current" />
             </div>
             <div>
-              <h3 className="text-lg sm:text-xl font-bold">
+              <h3 className="text-base sm:text-xl font-bold">
                 {step === 3 ? 'Donation Confirmed!' : 'Dignified Contribution'}
               </h3>
-              <p className="text-xs text-emerald-300">
+              <p className="text-[10px] sm:text-xs text-emerald-300">
                 100% Tax Deductible under Section 80G • Reg: {ngoConfig.regNumber}
               </p>
             </div>
@@ -109,7 +109,7 @@ export default function DonationModal({ isOpen, onClose, initialData = {} }) {
         </div>
 
         {/* Modal Body */}
-        <div className="p-6 sm:p-8">
+        <div className="p-4 sm:p-8">
           
           {/* STEP 1: Amount & Cause Selection */}
           {step === 1 && (

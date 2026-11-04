@@ -46,21 +46,21 @@ export default function Navbar({ onOpenDonate, onOpenVolunteer }) {
         <div className="flex items-center justify-between">
           
           {/* Logo with warm badge */}
-          <a href="#" className="flex items-center gap-2.5 group">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-[#09281B] to-[#145239] flex items-center justify-center text-amber-400 shadow-sm group-hover:scale-105 transition-transform">
-              <Heart className="w-5 h-5 fill-amber-400 text-amber-400" />
+          <a href="#" className="flex items-center gap-2 group shrink-0">
+            <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-tr from-[#09281B] to-[#145239] flex items-center justify-center text-amber-400 shadow-sm shrink-0 group-hover:scale-105 transition-transform">
+              <Heart className="w-4 h-4 sm:w-5 sm:h-5 fill-amber-400 text-amber-400" />
             </div>
 
             <div>
               <div className="flex items-center gap-1.5">
-                <span className="text-xl font-extrabold tracking-tight text-[#09281B] leading-none">
+                <span className="text-lg sm:text-xl font-extrabold tracking-tight text-[#09281B] leading-none">
                   Samarpan
                 </span>
-                <span className="text-[10px] uppercase font-bold tracking-wider px-1.5 py-0.5 rounded-full bg-amber-100 text-amber-900 border border-amber-300/60">
+                <span className="hidden xs:inline-block text-[9px] sm:text-[10px] uppercase font-bold tracking-wider px-1.5 py-0.5 rounded-full bg-amber-100 text-amber-900 border border-amber-300/60">
                   80G Certified
                 </span>
               </div>
-              <p className="text-[10px] text-stone-500 font-medium tracking-wide mt-0.5">
+              <p className="text-[9px] sm:text-[10px] text-stone-500 font-medium tracking-wide mt-0.5">
                 Regd. Non-Profit • Estd. 2011
               </p>
             </div>

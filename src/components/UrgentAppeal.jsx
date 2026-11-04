@@ -104,11 +104,11 @@ export default function UrgentAppeal({ onOpenDonate }) {
 
               <button
                 onClick={() => onOpenDonate({ amount: selectedAmount, cause: 'winter-warmth' })}
-                className="w-full py-3 px-4 rounded-xl font-bold text-xs sm:text-sm text-white bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-500 hover:to-amber-600 shadow-md transition-all flex items-center justify-center gap-2 cursor-pointer"
+                className="w-full py-3 px-3 sm:px-4 rounded-xl font-bold text-xs sm:text-sm text-white bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-500 hover:to-amber-600 shadow-md transition-all flex items-center justify-center gap-1.5 sm:gap-2 cursor-pointer"
               >
-                <Heart className="w-4 h-4 fill-white text-white" />
-                <span>Donate ₹{selectedAmount.toLocaleString('en-IN')} with 80G Receipt</span>
-                <ArrowRight className="w-3.5 h-3.5" />
+                <Heart className="w-4 h-4 fill-white text-white shrink-0" />
+                <span>Donate ₹{selectedAmount.toLocaleString('en-IN')} <span className="hidden xs:inline">with 80G Receipt</span></span>
+                <ArrowRight className="w-3.5 h-3.5 shrink-0" />
               </button>
             </div>
 

@@ -32,7 +32,7 @@ export const causesData = [
     goal: 3500000,
     donorsCount: 1420,
     daysLeft: 18,
-    impactUnit: "₹1,800 sponsors 1 girl child's education kit and digital tablet for 6 months",
+    impactUnit: "₹1,800 sponsors 1 girl's digital STEM & study kit",
     tags: ["STEM Education", "Girls Empowerment", "Digital Labs"],
     featured: true
   },
@@ -46,7 +46,7 @@ export const causesData = [
     goal: 5000000,
     donorsCount: 2310,
     daysLeft: 24,
-    impactUnit: "₹2,500 delivers free diagnostic checkups and life-saving meds for 10 villagers",
+    impactUnit: "₹2,500 funds health checkups & medicine for 10 villagers",
     tags: ["Mobile Clinic", "Maternal Health", "Free Medicine"],
     featured: true
   },
@@ -60,7 +60,7 @@ export const causesData = [
     goal: 2200000,
     donorsCount: 890,
     daysLeft: 31,
-    impactUnit: "₹3,500 buys a professional sewing machine and 3-month skill apprenticeship",
+    impactUnit: "₹3,500 sponsors 1 artisan sewing machine & skill training",
     tags: ["Micro-Finance", "Handloom Guild", "Dignified Livelihood"],
     featured: false
   },
@@ -74,7 +74,7 @@ export const causesData = [
     goal: 4000000,
     donorsCount: 3105,
     daysLeft: 12,
-    impactUnit: "₹1,200 provides 30 hot nutritious meals to malnourished hospital caretakers",
+    impactUnit: "₹1,200 delivers 30 hot nutritious meals to hospital families",
     tags: ["Zero Hunger", "Hospital Support", "Nutritious Food"],
     featured: true
   },
@@ -88,7 +88,7 @@ export const causesData = [
     goal: 2800000,
     donorsCount: 940,
     daysLeft: 42,
-    impactUnit: "₹5,000 installs community biosand filtration providing clean water to 25 homes",
+    impactUnit: "₹5,000 provides clean solar-filtered water for 25 homes",
     tags: ["Clean Water", "Solar Powered", "Disease Prevention"],
     featured: false
   },
@@ -102,7 +102,7 @@ export const causesData = [
     goal: 2000000,
     donorsCount: 760,
     daysLeft: 27,
-    impactUnit: "₹4,000 covers complete medical care, nutrition and comfort bedding for an elderly resident for 1 month",
+    impactUnit: "₹4,000 sponsors 1 month senior living & palliative care",
     tags: ["Palliative Care", "Senior Dignity", "Shelter & Love"],
     featured: false
   }

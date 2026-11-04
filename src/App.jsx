@@ -35,7 +35,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col font-sans selection:bg-amber-200 selection:text-amber-950">
+    <div className="min-h-screen flex flex-col font-sans selection:bg-amber-200 selection:text-amber-950 overflow-x-hidden w-full">
       
       {/* 1. Sleek Glassy Navbar */}
       <Navbar
@@ -43,7 +43,7 @@ export default function App() {
         onOpenVolunteer={() => setVolunteerModalOpen(true)}
       />
 
-      <main className="flex-1 space-y-4 sm:space-y-8">
+      <main className="flex-1 space-y-4 sm:space-y-8 overflow-x-hidden w-full">
         {/* 2. Hero: Modern, Glassy, Punchy */}
         <Hero
           onOpenDonate={() => handleOpenDonate({ amount: 2500 })}
