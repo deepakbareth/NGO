@@ -1,5 +1,6 @@
 import React from 'react';
 import { X, Play, Shield } from 'lucide-react';
+import documentaryPreviewImg from '../assets/hunger-relief.jpg';
 
 export default function VideoModal({ isOpen, onClose, onOpenDonate }) {
   if (!isOpen) return null;
@@ -28,7 +29,7 @@ export default function VideoModal({ isOpen, onClose, onOpenDonate }) {
         {/* Video Canvas / Ground Footage Preview */}
         <div className="relative aspect-video bg-black flex items-center justify-center overflow-hidden">
           <img
-            src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=1200&q=80"
+            src={documentaryPreviewImg}
             alt="Grassroots ground documentary"
             className="w-full h-full object-cover opacity-80"
           />

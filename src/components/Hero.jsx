@@ -1,5 +1,6 @@
 import React from 'react';
 import { Heart, Play, ShieldCheck, CheckCircle2, Award, Sparkles, ArrowRight } from 'lucide-react';
+import heroImg from '../assets/education.jpg';
 
 export default function Hero({ onOpenDonate, onOpenVideo }) {
   return (
@@ -97,7 +98,7 @@ export default function Hero({ onOpenDonate, onOpenVideo }) {
               {/* Genuine, Joyful Rural Education Photo */}
               <div className="relative aspect-[4/4.2] rounded-2xl overflow-hidden shadow-inner">
                 <img
-                  src="https://images.unsplash.com/photo-1596495578065-6e0763fa1178?auto=format&fit=crop&w=1000&q=80"
+                  src={heroImg}
                   alt="Joyful rural students smiling with books and dignity"
                   className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700"
                 />
