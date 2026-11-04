@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Heart, Users, ChevronRight, ShieldCheck } from 'lucide-react';
-import { ngoConfig } from '../data/ngoData';
+import { Menu, X, Heart, Users } from 'lucide-react';
 
 export default function Navbar({ onOpenDonate, onOpenVolunteer }) {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -21,6 +20,19 @@ export default function Navbar({ onOpenDonate, onOpenVolunteer }) {
     { name: 'Proof & Audits', href: '#trust-impact' },
     { name: 'Stories', href: '#stories' },
   ];
+
+  const handleNavClick = (e, href) => {
+    e.preventDefault();
+    setMobileMenuOpen(false);
+    const targetId = href.replace('#', '');
+    const element = document.getElementById(targetId);
+    if (element) {
+      // Balanced offset so the title and badge sit with a clean, comfortable gap below navbar
+      const yOffset = -70;
+      const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    }
+  };
 
   return (
     <header className="sticky top-0 z-40 px-3 sm:px-6 pt-3 pb-2 transition-all duration-300">
@@ -60,7 +72,8 @@ export default function Navbar({ onOpenDonate, onOpenVolunteer }) {
               <a
                 key={link.name}
                 href={link.href}
-                className="hover:text-amber-700 transition-colors py-1"
+                onClick={(e) => handleNavClick(e, link.href)}
+                className="hover:text-amber-700 transition-colors py-1 cursor-pointer"
               >
                 {link.name}
               </a>
@@ -114,8 +127,8 @@ export default function Navbar({ onOpenDonate, onOpenVolunteer }) {
               <a
                 key={link.name}
                 href={link.href}
-                onClick={() => setMobileMenuOpen(false)}
-                className="block py-1.5 px-2 text-sm font-medium text-stone-800 hover:text-amber-700 rounded-lg"
+                onClick={(e) => handleNavClick(e, link.href)}
+                className="block py-1.5 px-2 text-sm font-medium text-stone-800 hover:text-amber-700 rounded-lg cursor-pointer"
               >
                 {link.name}
               </a>

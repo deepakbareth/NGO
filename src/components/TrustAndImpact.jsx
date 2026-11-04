@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { ShieldCheck, Award, FileDown, CheckCircle, PieChart, Landmark } from 'lucide-react';
-import { impactStatsData, financialBreakdown, ngoConfig } from '../data/ngoData';
+import { impactStatsData, ngoConfig } from '../data/ngoData';
 
 export default function TrustAndImpact() {
   const [downloaded, setDownloaded] = useState(false);
@@ -11,7 +11,7 @@ export default function TrustAndImpact() {
   };
 
   return (
-    <section id="trust-impact" className="py-12 sm:py-16 relative">
+    <section id="trust-impact" className="py-10 sm:py-14 relative scroll-mt-20 sm:scroll-mt-24">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         
         {/* Section Header */}

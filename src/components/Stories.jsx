@@ -1,5 +1,5 @@
 import React from 'react';
-import { Quote, MapPin, Award, Heart, Sparkles } from 'lucide-react';
+import { MapPin, Award, Heart, Sparkles } from 'lucide-react';
 import { storiesData } from '../data/ngoData';
 
 export default function Stories({ onOpenDonate }) {
@@ -7,7 +7,7 @@ export default function Stories({ onOpenDonate }) {
   const topStories = storiesData.slice(0, 2);
 
   return (
-    <section id="stories" className="py-12 sm:py-16 relative">
+    <section id="stories" className="py-10 sm:py-14 relative scroll-mt-20 sm:scroll-mt-24">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         
         {/* Section Header */}

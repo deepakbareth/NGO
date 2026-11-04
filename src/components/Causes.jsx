@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Heart, Users, ArrowRight, Sparkles } from 'lucide-react';
+import { Heart, ArrowRight, Sparkles } from 'lucide-react';
 import { causesData } from '../data/ngoData';
 
 export default function Causes({ onOpenDonate }) {
@@ -10,7 +10,7 @@ export default function Causes({ onOpenDonate }) {
     : causesData.filter(c => c.category.toLowerCase() === filter);
 
   return (
-    <section id="causes" className="py-12 sm:py-16 relative">
+    <section id="causes" className="py-10 sm:py-14 relative scroll-mt-20 sm:scroll-mt-24">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         
         {/* Section Header */}

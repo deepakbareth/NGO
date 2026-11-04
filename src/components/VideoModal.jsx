@@ -1,6 +1,5 @@
 import React from 'react';
-import { X, Play, Shield, Sparkles } from 'lucide-react';
-import { ngoConfig } from '../data/ngoData';
+import { X, Play, Shield } from 'lucide-react';
 
 export default function VideoModal({ isOpen, onClose, onOpenDonate }) {
   if (!isOpen) return null;

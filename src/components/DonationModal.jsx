@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { X, Heart, ShieldCheck, CheckCircle2, Lock, ArrowRight, Download, RefreshCw, CreditCard, Smartphone } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import { ngoConfig, causesData } from '../data/ngoData';
@@ -19,14 +19,17 @@ export default function DonationModal({ isOpen, onClose, initialData = {} }) {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [receiptNumber, setReceiptNumber] = useState('');
 
-  // Update when initialData changes
-  useEffect(() => {
+  const [prevData, setPrevData] = useState(initialData);
+
+  // Synchronize state when initialData changes without cascading effect renders
+  if (initialData !== prevData) {
+    setPrevData(initialData);
     if (initialData.amount) setSelectedAmount(initialData.amount);
     if (initialData.isMonthly !== undefined) {
       setFrequency(initialData.isMonthly ? 'monthly' : 'onetime');
     }
     if (initialData.cause) setSelectedCause(initialData.cause);
-  }, [initialData]);
+  }
 
   if (!isOpen) return null;
 

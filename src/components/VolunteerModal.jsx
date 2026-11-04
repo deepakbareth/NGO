@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import { X, Users, CheckCircle2, ArrowRight, HeartHandshake, Sparkles } from 'lucide-react';
+import { X, Users, CheckCircle2, ArrowRight, HeartHandshake } from 'lucide-react';
 import confetti from 'canvas-confetti';
-import { ngoConfig } from '../data/ngoData';
 
 export default function VolunteerModal({ isOpen, onClose }) {
   const [submitted, setSubmitted] = useState(false);

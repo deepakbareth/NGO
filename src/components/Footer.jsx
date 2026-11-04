@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
-import { Heart, Mail, Phone, MapPin, Check, Send, Landmark } from 'lucide-react';
+import { Heart, Check, Send, Landmark } from 'lucide-react';
 import { ngoConfig } from '../data/ngoData';
+
+const currentYear = new Date().getFullYear();
 
 export default function Footer({ onOpenDonate, onOpenVolunteer }) {
   const [email, setEmail] = useState('');
@@ -102,7 +104,7 @@ export default function Footer({ onOpenDonate, onOpenVolunteer }) {
         {/* Bottom bar */}
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-stone-400">
           <div>
-            © {new Date().getFullYear()} {ngoConfig.legalName}. Section 80G Approved.
+            © {currentYear} {ngoConfig.legalName}. Section 80G Approved.
           </div>
 
           <div className="flex items-center gap-3">

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Calculator, Heart, ArrowRight, Utensils, Users, Award, Sparkles } from 'lucide-react';
+import { Calculator, Heart, ArrowRight, Sparkles } from 'lucide-react';
 import { impactCalculatorTiers } from '../data/ngoData';
 
 export default function ImpactCalculator({ onOpenDonate }) {
@@ -12,11 +12,11 @@ export default function ImpactCalculator({ onOpenDonate }) {
   const mealsEquivalent = isMonthly ? activeTier.mealsCount * 12 : activeTier.mealsCount;
 
   return (
-    <section id="calculator" className="py-12 sm:py-16 relative">
+    <section id="calculator" className="py-6 sm:py-10 relative scroll-mt-20 sm:scroll-mt-24">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         
         {/* Section Header */}
-        <div className="text-center max-w-2xl mx-auto space-y-2 mb-8">
+        <div className="text-center max-w-2xl mx-auto space-y-2 mb-6">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-amber-100 text-amber-900 border border-amber-300">
             <Calculator className="w-3.5 h-3.5 text-amber-700" />
             Transparent Impact

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { AlertCircle, Clock, Heart, Users, ArrowRight, Check } from 'lucide-react';
+import { AlertCircle, Clock, Heart, Users, ArrowRight } from 'lucide-react';
 
 export default function UrgentAppeal({ onOpenDonate }) {
   const [selectedAmount, setSelectedAmount] = useState(1500);
@@ -14,7 +14,7 @@ export default function UrgentAppeal({ onOpenDonate }) {
   ];
 
   return (
-    <section id="urgent-drive" className="py-8 sm:py-12">
+    <section id="urgent-drive" className="py-8 sm:py-12 scroll-mt-20 sm:scroll-mt-24">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         
         <div className="glass-dark rounded-3xl text-white p-6 sm:p-8 shadow-xl relative overflow-hidden">

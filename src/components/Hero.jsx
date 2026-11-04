@@ -1,6 +1,5 @@
 import React from 'react';
 import { Heart, Play, ShieldCheck, CheckCircle2, Award, Sparkles, ArrowRight } from 'lucide-react';
-import { ngoConfig } from '../data/ngoData';
 
 export default function Hero({ onOpenDonate, onOpenVideo }) {
   return (
